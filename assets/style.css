@@ -1,0 +1,101 @@
+* { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background-color: bisque;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "menu-lateral products-section"
+    "footer footer";
+    grid-template-columns: 15% 85%;
+}
+
+.header {
+    grid-area: header;
+    background-color: #D0640F;
+    height: 60px;
+}
+
+.header h3 {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size:xx-large;
+    font-family: 'Kalam', cursive;
+
+}
+
+.menu-lateral{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    background-color: #FFA864;
+    color:white;
+    grid-area: menu-lateral;
+    min-height: 100vh;
+    padding-left: 1rem;
+    padding-top: 2rem;
+}
+
+.menu-lateral p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    gap:7px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.products-section{
+    padding-left: 40px;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+.boton{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.format-boton{
+    background-color: #D0640F;
+    height: 40px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
+.footer {
+    padding-top: 30px;
+    grid-area: footer;
+    background-color: #D0640F;
+    height: 40px;
+}
+
+.footer p{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+}
